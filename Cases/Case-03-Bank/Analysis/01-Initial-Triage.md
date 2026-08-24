@@ -47,7 +47,7 @@ No links were clicked during the visual inspection.
 
 ### Screenshot — Email Visual Inspection
 
-![Email Visual Inspection](../Screenshots/01-Initial-Triage/01-email-visual-inspection.png)
+![Email Visual Inspection](../Screenshots/01-initial-triage/01-email-visual-inspection.png)
 
 ---
 
@@ -135,7 +135,7 @@ The actual URL and destination infrastructure will be extracted and investigated
 
 ### Screenshot — Suspicious Link Hover
 
-![Suspicious Link Hover](../Screenshots/01-Initial-Triage/02-suspicious-link-hover.png)
+![Suspicious Link Hover](../Screenshots/01-initial-triage/02-suspicious-link-hover.png)
 
 ---
 
@@ -199,7 +199,7 @@ The following screenshots were captured during the initial triage phase.
 
 The screenshot shows the suspicious email as displayed to the recipient, including sender information, subject, Santander branding, message content, and the account-update request.
 
-![Email Visual Inspection](../Screenshots/01-Initial-Triage/01-email-visual-inspection.png)
+![Email Visual Inspection](../Screenshots/01-initial-triage/01-email-visual-inspection.png)
 
 ---
 
@@ -207,7 +207,7 @@ The screenshot shows the suspicious email as displayed to the recipient, includi
 
 The screenshot shows the suspicious hyperlink being inspected by hovering over it without clicking.
 
-![Suspicious Link Hover](../Screenshots/01-Initial-Triage/02-suspicious-link-hover.png)
+![Suspicious Link Hover](../Screenshots/01-initial-triage/02-suspicious-link-hover.png)
 
 ---
 
