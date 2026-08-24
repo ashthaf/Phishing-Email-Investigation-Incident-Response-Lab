@@ -410,11 +410,11 @@ Those questions require further analysis of the routing chain, sender infrastruc
 
 ### Thunderbird Raw Header View
 
-![Thunderbird Raw Header View](../Screenshots/02-header-analysis/04-thunderbird-header-view.png)
+![Thunderbird Raw Header View](../Screenshots/02-Header-Analysis/04-thunderbird-header-view.png)
 
 ### Authentication Header Summary
 
-![Authentication Header Summary](../Screenshots/02-header-analysis/05-authentication-header-summary.png)
+![Authentication Header Summary](../Screenshots/02-Header-Analysis/05-authentication-header-summary.png)
 
 ---
 
