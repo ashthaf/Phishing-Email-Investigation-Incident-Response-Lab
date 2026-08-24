@@ -406,7 +406,7 @@ Those questions require further analysis of the routing chain, sender infrastruc
 
 ### Header Extraction
 
-![Header Extraction](../Screenshots/02-header-analysis/03-header-analysis.png)
+![Header Extraction](../Screenshots/02-Header-Analysis/03-header-analysis.png)
 
 ### Thunderbird Raw Header View
 
