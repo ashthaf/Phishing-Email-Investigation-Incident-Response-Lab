@@ -470,5 +470,3 @@ The investigation will now proceed to:
 
 **Phase 03 — Routing Analysis**
 
-```
-```
