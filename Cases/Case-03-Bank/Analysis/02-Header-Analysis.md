@@ -52,7 +52,7 @@ The message also contained multiple `Received:` headers and authentication-relat
 
 ### Evidence Screenshot
 
-![Header Extraction](../Screenshots/02-header-analysis/03-header-analysis.png)
+![Header Extraction](../Screenshots/02-Header-Analysis/03-header-analysis.png)
 
 ---
 
