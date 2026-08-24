@@ -1,6 +1,4 @@
-Yes — here is the **entire `02-Header-Analysis.md` file as one clean Markdown document**. Copy everything inside the block and paste it directly into your GitHub `02-Header-Analysis.md` file. The content follows the evidence from your current Case-03 analysis. 
 
-````markdown
 # Header Analysis
 
 ## Objective
