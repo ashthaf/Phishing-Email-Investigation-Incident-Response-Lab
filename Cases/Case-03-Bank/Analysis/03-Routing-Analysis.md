@@ -337,7 +337,7 @@ The `SERVFAIL` result should therefore **not** be interpreted as proof that the 
 
 The historical `Received:` headers remain the primary evidence that the hostname and IP address were present in the email's routing path.
 
-![DNS analysis of historical mail server](../Screenshots/03-routing-analysis/08-dns-mail-server.png)
+![DNS analysis of historical mail server](../Screenshots/03-Routing-Analysis/08-mail-server-dns-analysis.png)
 
 ---
 
@@ -360,7 +360,7 @@ Listed 0 times with 0 timeouts
 
 The displayed blacklist checks returned `OK` for the tested services.
 
-![MXToolbox blacklist analysis of originating IP](../Screenshots/03-routing-analysis/09-mxtoolbox-origin-ip.png)
+![MXToolbox blacklist analysis of originating IP](../Screenshots/03-Routing-Analysis/09-mxtoolbox-origin-ip.png)
 
 ### Interpretation
 
@@ -391,7 +391,7 @@ Listed 0 times with 0 timeouts
 
 The tested blacklist services displayed `OK`.
 
-![MXToolbox blacklist analysis of mail server IP](../Screenshots/03-routing-analysis/10-mxtoolbox-mail-server-ip.png)
+![MXToolbox blacklist analysis of mail server IP](../Screenshots/03-Routing-Analysis/10-mxtoolbox-mail-server-ip.png)
 
 ### Interpretation
 
@@ -423,7 +423,7 @@ DMARC Policy Not Enabled
 BIMI Record Published: Brand Logo not appearing in inboxes
 ```
 
-![MXToolbox DNS and MX analysis](../Screenshots/03-routing-analysis/11-mxtoolbox-mail-host.png)
+![MXToolbox DNS and MX analysis](../Screenshots/03-Routing-Analysis/11-mxtoolbox-mail-host.png)
 
 ### Interpretation
 
@@ -563,21 +563,21 @@ The following screenshots document the routing-analysis activities performed dur
 
 ### Originating IP / RIPE Analysis
 
-![RIPE analysis of originating IP](../Screenshots/03-routing-analysis/06-origin-ip-analysis.png)
+![RIPE analysis of originating IP](../Screenshots/03-Routing-Analysis/06-origin-ip-analysis.png)
 
 ### DNS Analysis
 
-![DNS analysis of historical mail server](../Screenshots/03-routing-analysis/08-dns-mail-server.png)
+![DNS analysis of historical mail server](../Screenshots/03-Routing-Analysis/08-mail-server-dns-analysis.png)
 
 ### MXToolbox — Originating IP
 
-![MXToolbox blacklist analysis of originating IP](../Screenshots/03-routing-analysis/09-mxtoolbox-origin-ip.png)
+![MXToolbox blacklist analysis of originating IP](../Screenshots/03-Routing-Analysis/09-mxtoolbox-origin-ip.png)
 
 ### MXToolbox — Mail Server IP
 
-![MXToolbox blacklist analysis of mail server IP](../Screenshots/03-routing-analysis/10-mxtoolbox-mail-server-ip.png)
+![MXToolbox blacklist analysis of mail server IP](../Screenshots/03-Routing-Analysis/10-mxtoolbox-mail-server-ip.png)
 
 ### MXToolbox — Mail Server Host
 
-![MXToolbox DNS and MX analysis](../Screenshots/03-routing-analysis/11-mxtoolbox-mail-host.png)
+![MXToolbox DNS and MX analysis](../Screenshots/03-Routing-Analysis/11-mxtoolbox-mail-host.png)
 
