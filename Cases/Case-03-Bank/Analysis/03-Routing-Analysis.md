@@ -1,8 +1,3 @@
-Yes — you want **one clean Markdown document**, with proper Markdown syntax, ready to copy directly into `03-Routing-Analysis.md`, without the extra explanation around it.
-
-The content below is based on the routing-analysis material you provided. 
-
-````markdown
 # Routing Analysis
 
 ## Objective
