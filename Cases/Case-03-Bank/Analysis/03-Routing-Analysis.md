@@ -202,7 +202,7 @@ Abuse contact: abuse@avast.com
 
 The presence of this address in the database record represents the registered abuse contact and does not establish that the organization associated with that address sent, controlled, or participated in the email activity.
 
-![RIPE analysis of originating IP](../Screenshots/03-routing-analysis/06-origin-ip-analysis.png)
+![RIPE analysis of originating IP](../Screenshots/03-Routing-Analysis/06-origin-ip-analysis.png)
 
 ---
 
