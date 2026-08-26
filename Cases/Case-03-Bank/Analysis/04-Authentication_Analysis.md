@@ -1,6 +1,3 @@
-Absolutely. Based strictly on the authentication evidence you collected, here is a **polished, GitHub-ready `authentication-analysis.md`** you can copy-paste directly.
-
-````md
 # Authentication Analysis
 
 ## Case 03 — Bank Email Investigation
