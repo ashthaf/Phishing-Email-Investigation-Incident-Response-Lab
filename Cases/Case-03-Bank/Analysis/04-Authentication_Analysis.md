@@ -40,7 +40,7 @@ grep -inE '^(Authentication-Results|Received-SPF|DKIM-Signature|ARC-|From:|Retur
 
 ### Evidence
 
-![Authentication header extraction](../screenshots/authentication-header-extraction.png)
+![Authentication header extraction](../Screenshots/04-Authentication-Analysis/12-authentication-headers.png)
 
 ---
 
@@ -112,7 +112,7 @@ This means SPF could not be reliably used to authenticate the sending infrastruc
 
 ### Evidence
 
-![SPF PermError](../screenshots/spf-permerror.png)
+![SPF PermError](../Screenshots/04-Authentication-Analysis/14-spf-analysis.png)
 
 ---
 
@@ -152,7 +152,7 @@ The message was not DKIM-signed.
 
 ### Evidence
 
-![DKIM not present](../screenshots/dkim-none.png)
+![DKIM not present](../Screenshots/04-Authentication-Analysis/15-dkim-analysis.png)
 
 ---
 
@@ -196,7 +196,7 @@ However, because SPF returned a permanent error and DKIM was absent, there was n
 
 ### Evidence
 
-![DMARC Temporary Error](../screenshots/dmarc-temperror.png)
+![DMARC Temporary Error](../Screenshots/04-Authentication-Analysis/16-dmarc-analysis.png)
 
 ---
 
@@ -232,7 +232,7 @@ This is a relevant indicator when assessing possible impersonation or phishing a
 
 ### Evidence
 
-![From header](../screenshots/from-header.png)
+![From header](../Screenshots/04-Authentication-Analysis/12-authentication-headers.png)
 
 ---
 
@@ -274,7 +274,7 @@ Therefore, the domain relationship could not be successfully authenticated throu
 
 ### Evidence
 
-![Return Path](../screenshots/return-path.png)
+![Return Path](../Screenshots/04-Authentication-Analysis/12-authentication-headers.png)
 
 ---
 
@@ -328,7 +328,7 @@ dbmailB02.dbmail.porta80.com.br
 
 ### Evidence
 
-![Sending IP and host](../screenshots/sending-ip-host.png)
+![Sending IP and host](../Screenshots/04-Authentication-Analysis/12-authentication-headers.png)
 
 ---
 
