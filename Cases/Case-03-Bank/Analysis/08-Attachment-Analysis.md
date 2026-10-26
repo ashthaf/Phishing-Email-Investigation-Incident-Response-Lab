@@ -10,9 +10,9 @@
 
 ## 1. Objective
 
-The objective of this phase was to inspect the MIME structure of the suspicious email `sample-220.eml` to identify conventional attachments, filenames, inline resources, and other potentially embedded content.
+The objective of this phase was to inspect the MIME structure of `sample-220.eml` to identify conventional attachments, filenames, inline resources, and potentially embedded content.
 
-The analysis was performed using Linux command-line tools and a Python MIME inventory script. The original email was inspected as text; no suspicious attachment was executed.
+The analysis used Linux command-line tools and a Python MIME inventory script. The original email was inspected as text; no suspicious attachment was executed.
 
 ## 2. Evidence Information
 
@@ -48,28 +48,27 @@ The MIME inventory identified two body parts:
 
 The inventory reported **zero named or explicitly identified attachment candidates**.
 
-The MIME structure was consistent with a multipart email containing a plain-text alternative and an HTML alternative. Both identified parts had unspecified content disposition and no filename.
+The MIME structure was consistent with a multipart email containing plain-text and HTML alternatives. Both identified parts had unspecified content disposition and no filename.
 
 ### MIME header inspection
-
-The following command was used to locate MIME-related headers:
 
 ```bash
 grep -inE '^(Content-Type|Content-Disposition|Content-Transfer-Encoding|Content-ID|MIME-Version):|filename\*?=' sample-220.eml
 ```
 
-The MIME boundary markers were reviewed using:
+### MIME boundary inspection
 
 ```bash
 grep -nE '^--[^[:space:]]+' sample-220.eml
 ```
 
-The boundary output showed the two body-part boundaries and the closing boundary.
+**Screenshot — MIME headers and structure**
 
-**Screenshot evidence:**
+![MIME header inspection](../Artifacts/Attachment-Analysis/screenshots/03-mime-structure-review.png)
 
-- `Artifacts/Attachment-Analysis/screenshots/03-mime-structure-review.png`
-- `Artifacts/Attachment-Analysis/screenshots/06-mime-boundaries.png`
+**Screenshot — MIME boundaries**
+
+![MIME boundary inspection](../Artifacts/Attachment-Analysis/screenshots/06-mime-boundaries.png)
 
 ## 4. Python MIME Inventory Script
 
@@ -130,11 +129,11 @@ The recorded inventory output reported:
 - **Part 2:** `text/html`, 6,693 decoded bytes.
 - **Named/explicit attachment candidates:** `0`.
 
-The script does not automatically prove that every possible embedded resource is absent. Its results were therefore considered alongside the raw MIME headers, boundary markers, and HTML resource checks.
+The script does not automatically prove that all possible embedded resources are absent. Its results were considered alongside the raw MIME headers, boundary markers, and HTML resource checks.
 
-**Screenshot evidence:**
+**Screenshot — MIME inventory output**
 
-- `Artifacts/Attachment-Analysis/screenshots/04-embedded-content-review.png`
+![MIME inventory output](../Artifacts/Attachment-Analysis/screenshots/04-mime-inventory.png)
 
 ## 5. Attachment Indicator Checks
 
@@ -152,15 +151,21 @@ A separate check was performed for Base64 transfer encoding:
 grep -in 'Content-Transfer-Encoding: base64' sample-220.eml
 ```
 
-No matching header was returned. The two MIME body parts identified by the inventory used `quoted-printable` encoding.
+No matching header was returned. The two identified MIME body parts used `quoted-printable` encoding.
 
 These results support the finding that no conventional attachment was identified in the examined MIME structure. The absence of a Base64 header alone is not proof that a message contains no embedded content.
 
-**Screenshot evidence:**
+**Screenshot — Attachment-related header check**
 
-- `Artifacts/Attachment-Analysis/screenshots/02-attachment-indicators.png`
-- `Artifacts/Attachment-Analysis/screenshots/07-base64-check.png`
-- `Artifacts/Attachment-Analysis/screenshots/10-final-attachment-header-check.png`
+![Attachment header check](../Artifacts/Attachment-Analysis/screenshots/02-attachment-indicators.png)
+
+**Screenshot — Base64 encoding check**
+
+![Base64 check](../Artifacts/Attachment-Analysis/screenshots/07-base64-check.png)
+
+**Screenshot — Final attachment header verification**
+
+![Final attachment header check](../Artifacts/Attachment-Analysis/screenshots/10-final-attachment-header-check.png)
 
 ## 6. Inline and Externally Hosted Resources
 
@@ -176,15 +181,15 @@ The search identified an externally hosted image reference associated with an Av
 https://s-install.avcdn.net/ipm/preview/icons/...
 ```
 
-The displayed URL was truncated in the terminal output, so the full resource URL is not reproduced here.
+The terminal output truncated the URL, so the full resource URL is not reproduced here.
 
 This reference indicates that the HTML body requests an external image resource. It does **not**, by itself, indicate that the image is attached to the email.
 
 The external resource was not downloaded as part of this phase.
 
-**Screenshot evidence:**
+**Screenshot — HTML resource inspection**
 
-- `Artifacts/Attachment-Analysis/screenshots/04-embedded-content-review.png`
+![HTML resource inspection](../Artifacts/Attachment-Analysis/screenshots/04-embedded-content-review.png)
 
 ## 7. Findings Summary
 
@@ -194,7 +199,7 @@ The external resource was not downloaded as part of this phase.
 | Plain-text body | Present |
 | HTML body | Present |
 | Named attachment candidates | 0 |
-| Explicit attachment headers | No matches in the final header search |
+| Explicit attachment headers | No matches in final header search |
 | Base64 transfer-encoding header | Not found |
 | External image reference | Identified in HTML |
 | Attachment extraction | Not performed |
@@ -209,22 +214,23 @@ No explicit attachment-related headers or Base64 transfer-encoding headers were 
 
 This conclusion is limited to the checks documented above and does not establish that all possible embedded or externally referenced content is harmless.
 
-## 9. Evidence Screenshots
+## 9. Evidence Screenshot Inventory
 
-Screenshots are stored under:
+Screenshots are referenced directly in the relevant sections above. The intended directory is:
 
 `Artifacts/Attachment-Analysis/screenshots/`
 
-The report references the following evidence images:
+The report uses these filenames:
 
-1. `03-mime-structure-review.png`
-2. `06-mime-boundaries.png`
-3. `04-embedded-content-review.png`
-4. `02-attachment-indicators.png`
-5. `07-base64-check.png`
-6. `10-final-attachment-header-check.png`
+- `03-mime-structure-review.png`
+- `06-mime-boundaries.png`
+- `04-mime-inventory.png`
+- `02-attachment-indicators.png`
+- `07-base64-check.png`
+- `10-final-attachment-header-check.png`
+- `04-embedded-content-review.png`
 
-Confirm the filenames against the actual screenshot directory before committing the report.
+Verify that these exact filenames exist in the repository before committing. Update any Markdown paths if your saved filenames differ.
 
 ## 10. Analysis Safety
 
