@@ -61,7 +61,7 @@ From: "santander" <compras@oftalmozonasul.com.br>
 
 ### Screenshot
 
-![From Header](../Cases/Case-03-Bank/Screenshots/05-Sender-Analysis/from-header-analysis.png)
+![From Header](../Screenshots/05-Sender-Analysis/from-header-analysis.png)
 
 ### Observation
 
