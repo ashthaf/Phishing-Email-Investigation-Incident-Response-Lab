@@ -131,7 +131,7 @@ Message-ID:
 
 ### Screenshot
 
-![Message-ID Analysis](../Evidence/email/screenshots/06-message-id.png)
+![Message-ID Analysis](../Screenshots/05-Sender-Analysis/message-id.png)
 
 ### Observation
 
