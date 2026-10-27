@@ -99,7 +99,7 @@ Return-Path: compras@oftalmozonasul.com.br
 
 ### Screenshot
 
-![Return-Path](../Evidence/email/screenshots/08-return-path.png)
+![Return-Path](../Screenshots/05-Sender-Analysis/return-path-analysis.png)
 
 ### Observation
 
@@ -153,7 +153,7 @@ No `Reply-To` header was returned.
 
 ### Screenshot
 
-![Reply-To Analysis](../Evidence/email/screenshots/07-reply-to.png)
+![Reply-To Analysis](..Screenshots/05-Sender-Analysis/message-id.png)
 
 ### Observation
 
@@ -175,7 +175,7 @@ No `Sender:` header was returned.
 
 ### Screenshot
 
-![Sender Header](../Evidence/email/screenshots/10-sender-header.png)
+![Sender Header](../Screenshots/05-Sender-Analysis/sender-analysis.png)
 
 ### Observation
 
@@ -201,7 +201,7 @@ Return-Path: compras@oftalmozonasul.com.br
 
 ### Screenshot
 
-![Header Comparison](../Evidence/email/screenshots/09-header-overview.png)
+![Header Comparison](../Screenshots/05-Sender-Analysis/sender-analysis.png)
 
 ### Summary
 
