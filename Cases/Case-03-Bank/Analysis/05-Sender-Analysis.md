@@ -500,7 +500,7 @@ registrants, contacts, tickets, providers, IPs, and ASNs.
 
 ### Screenshot
 
-![WHOIS Lookup](../Evidence/email/screenshots/11-whois.png)
+![WHOIS Lookup](../Screenshots/05-Sender-Analysis/whois.png)
 
 ### Observation
 
