@@ -358,7 +358,7 @@ ANSWER: 0
 
 ### Screenshot
 
-![DNS A Record](../Evidence/email/screenshots/01-dns-a.png)
+![DNS A Record](../Screenshots/05-Sender-Analysis/digA.png)
 
 ### Observation
 
@@ -389,7 +389,7 @@ ANSWER: 0
 
 ### Screenshot
 
-![DNS MX Record](../Evidence/email/screenshots/02-dns-mx.png)
+![DNS MX Record](../Screenshots/05-Sender-Analysis/digMX.png)
 
 ### Observation
 
@@ -414,7 +414,7 @@ ANSWER: 0
 
 ### Screenshot
 
-![DNS NS Record](../Evidence/email/screenshots/03-dns-ns.png)
+![DNS NS Record](../Screenshots/05-Sender-Analysis/digNS.png)
 
 ### Observation
 
@@ -439,7 +439,7 @@ ANSWER: 0
 
 ### Screenshot
 
-![DNS TXT Record](../Evidence/email/screenshots/04-dns-txt.png)
+![DNS TXT Record](../Screenshots/05-Sender-Analysis/digTXT.png)
 
 ### Observation
 
@@ -473,7 +473,7 @@ The individual `dig` queries returned `NXDOMAIN`.
 
 ### Screenshot
 
-![Combined DNS Analysis](../Evidence/email/screenshots/04-dns-txt.png)
+![Combined DNS Analysis](../Screenshots/05-Sender-Analysis/combined-dns.png)
 
 ---
 
