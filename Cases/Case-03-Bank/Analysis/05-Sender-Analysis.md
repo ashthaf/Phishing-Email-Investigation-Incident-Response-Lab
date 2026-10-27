@@ -153,7 +153,7 @@ No `Reply-To` header was returned.
 
 ### Screenshot
 
-![Reply-To Analysis](..Screenshots/05-Sender-Analysis/message-id.png)
+![Reply-To Analysis](../Screenshots/05-Sender-Analysis/reply-to.png)
 
 ### Observation
 
