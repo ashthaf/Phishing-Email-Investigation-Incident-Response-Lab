@@ -261,7 +261,7 @@ Authentication-Results: spf=permerror (sender IP is 187.85.67.134)
 
 ### Screenshot
 
-![Authentication Results](../Evidence/email/screenshots/09-header-overview.png)
+![Authentication Results](../Screenshots/05-Sender-Analysis/12-authentication-headers.png)
 
 ### Observed SPF Result
 
@@ -308,7 +308,7 @@ Received: from DESKTOP-PUC3EA (unknown [185.54.230.174])
 
 ### Screenshot
 
-![Received Headers](../Evidence/email/screenshots/09-header-overview.png)
+![Received Headers](../Screenshots/05-Sender-Analysis/03-header-analysis.png)
 
 ### Observed Infrastructure Indicators
 
